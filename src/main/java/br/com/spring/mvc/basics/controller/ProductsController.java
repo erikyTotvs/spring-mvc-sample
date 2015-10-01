@@ -19,8 +19,8 @@ import br.com.spring.mvc.basics.model.Product;
 import br.com.spring.mvc.basics.validator.ProductValidator;
 
 @Controller
-@Transactional
-@RequestMapping("/products")
+@Transactional // Enable transactional functionalities to the injected bean
+@RequestMapping("/products") // All path to this controller shall start with this path prefix
 public class ProductsController {
 
 	@Autowired
